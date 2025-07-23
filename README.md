@@ -20,7 +20,6 @@ integrating sensor data or control signals between the two platforms.
  USB cable for Arduino
  Breadboard
  Jumper wires
-
 
 
  220-ohm resistor
@@ -39,19 +38,7 @@ o Connect the cathode (short leg) to the ground (GND) on the Arduino.
 o Open the Arduino IDE on your computer.
 o Write and upload the following code to the Arduino:
 cpp
-Copy code
-void setup() {
-Serial.begin(9600); // Initialize serial communication
-pinMode(9, OUTPUT); // Set pin 9 as output
-}
-void loop() {
-digitalWrite(9, HIGH); // Turn the LED on
-Serial.println(&quot;LED ON&quot;);
-delay(1000); // Wait for a second
-digitalWrite(9, LOW); // Turn the LED off
-Serial.println(&quot;LED OFF&quot;);
-delay(1000); // Wait for a second
-}
+
 
 Part 2: Raspberry Pi Setup
 1. Prepare Raspberry Pi:
@@ -62,40 +49,6 @@ o Power up the Raspberry Pi and complete the initial setup.
 o Open a terminal window on the Raspberry Pi.
 o Install the pyserial library with:
 bash
-
-
-
-Copy code
-sudo apt-get update
-sudo apt-get install python3-serial
-
-3. Create Python Script:
-o Create a Python script to read the serial data from Arduino. Open a text editor and
-write the following script:
-python
-Copy code
-import serial
-# Open serial port
-ser = serial.Serial(&#39;/dev/ttyACM0&#39;, 9600)
-while True:
-try:
-line = ser.readline().decode(&#39;utf-8&#39;).strip()
-print(line)
-except KeyboardInterrupt:
-break
-ser.close()
-4. Run the Script:
-o Save the Python script as read_serial.py.
-o Execute the script by running:
-bash
-Copy code
-python3 read_serial.py
-5. Connect Arduino to Raspberry Pi:
-o Connect the Arduino to the Raspberry Pi using a USB cable.
-
-5. Image
-
-
 
 
 Fig:-Arduino board connected to the LED
