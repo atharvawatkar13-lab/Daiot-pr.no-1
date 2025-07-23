@@ -1,7 +1,7 @@
 # Daiot-pr.no-1
-1. Aim-- To Study the Arduino and Raspberry Pi.
+1. Aim- To Study the Arduino and Raspberry Pi.
 2. Theory
-Arduino
+Arduino:-
 Arduino is an open-source electronics platform that provides a simple microcontroller-based
 environment for creating interactive electronic projects. It uses a straightforward programming
 language and IDE to control digital and analog components.
@@ -59,8 +59,7 @@ The Python script running on the Raspberry Pi reads the serial messages sent by 
 prints them to the terminal. This allows the Raspberry Pi to monitor the status of the LED on the
 Arduino.
 
-S No.
-Arduino Raspberry Pi
+S No. Arduino Raspberry Pi
 
 1.
 In the year 2005, the classrooms of
