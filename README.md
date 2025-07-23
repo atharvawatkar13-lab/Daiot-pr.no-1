@@ -21,7 +21,6 @@ integrating sensor data or control signals between the two platforms.
  Breadboard
  Jumper wires
 
-
  220-ohm resistor
  DHT11 Temperature and Humidity Sensor
  MicroSD card with Raspbian OS (for Raspberry Pi)
@@ -39,7 +38,6 @@ o Open the Arduino IDE on your computer.
 o Write and upload the following code to the Arduino:
 cpp
 
-
 Part 2: Raspberry Pi Setup
 1. Prepare Raspberry Pi:
 o Insert the microSD card into the Raspberry Pi.
@@ -49,7 +47,6 @@ o Power up the Raspberry Pi and complete the initial setup.
 o Open a terminal window on the Raspberry Pi.
 o Install the pyserial library with:
 bash
-
 
 Fig:-Arduino board connected to the LED
 
@@ -62,8 +59,7 @@ The Python script running on the Raspberry Pi reads the serial messages sent by 
 prints them to the terminal. This allows the Raspberry Pi to monitor the status of the LED on the
 Arduino.
 
-S
-No.
+S No.
 Arduino Raspberry Pi
 
 1.
@@ -83,11 +79,9 @@ The control unit of Raspberry Pi is from the
 ARM family.
 
 3. Arduino is based on a microcontroller. While Raspberry Pi is based on a
-
 microprocessor.
 
-4.
-It is designed to control the electrical
+4.It is designed to control the electrical
 components connected to the circuit
 board in a system.
 
@@ -102,14 +96,9 @@ hardware and software structure.
 While Raspberry Pi boards have a complex
 architecture of hardware and software.
 
-
-
-
-
 6. CPU architecture: 8 bit. CPU architecture: 64 bit.
 
 7. It uses very little RAM, 2 kB. While Raspberry Pi requires more RAM, 1
-
 GB.
 8. It clocks a processing speed of 16
 MHz.
@@ -127,7 +116,6 @@ drive strength.
 11. It consumes about 200 MW of power. While it consumes about 700 MW of power.
 12. Its logic level is 5V. Its logic level is 3V.
 13. It does not have internet support. It has inbuilt Ethernet port and WiFi
-
 support.
 
 14. It has higher current drive strength. It has lower current drive strength.
@@ -147,7 +135,7 @@ Arduino.
 Operating System is required in Raspberry
 Pi.
 
-7. Conclusion
+ Conclusion
 The lab exercise successfully demonstrated the basic operations of Arduino and Raspberry Pi, as
 well as how to establish serial communication between them. By completing this experiment,
 students gained practical experience in interfacing microcontrollers with single-board computers
